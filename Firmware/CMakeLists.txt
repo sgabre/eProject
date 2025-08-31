@@ -1,4 +1,4 @@
-#/TestHarness/Firmware/CMakeLists.txt
+#/Firmware/CMakeLists.txt
 
 
 #add_subdirectory(Shell)
