@@ -185,3 +185,45 @@ EmbeddedProject/
 * EPIC-014: Coverage Target
 * EPIC-015: Metrics/Code Quality
 * EPIC-016: Dashboards
+
+
+# Command-In-Line Memento
+
+List all configuration
+
+```bash
+cmake --list-presets 
+```
+
+Configure
+
+```bash
+cmake --preset Debug 
+```
+
+Build Configuration
+
+```bash
+cmake --build --preset Debug 
+```
+
+# EPIC-003: Sample CMake
+
+## File Architectures
+
+```txt
+.
+├── CMakeLists.txt
+├── CMakePresets.json
+├── Firmware
+│   ├── Applications
+│   │   ├── CMakeLists.txt
+│   │   └── Sample
+│   │       ├── CMakeLists.txt
+│   │       └── main.c
+│   └── CMakeLists.txt
+├── LICENSE
+├── README.md
+└── scripts
+    └── build.sh
+```
