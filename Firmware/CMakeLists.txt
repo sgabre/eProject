@@ -2,11 +2,11 @@
 
 
 #add_subdirectory(Shell)
-add_subdirectory(Module)
+#add_subdirectory(Module)
 
 if(NOT CMAKE_BUILD_TYPE STREQUAL UnitTesting)
     # Include the Version.cmake file
-    include(${CMAKE_SOURCE_DIR}/.cmake/Version/git.cmake)
+    include(${CMAKE_SOURCE_DIR}/.cmake/git-version.cmake)
     
     # Now you can use the version information
     message(STATUS "CMAKE_PROJECT_NAME: ${CMAKE_PROJECT_NAME}")
@@ -20,7 +20,7 @@ if(NOT CMAKE_BUILD_TYPE STREQUAL UnitTesting)
     
     
     # Now, configure the Version.h.in file to create Version.h with actual values
-    configure_file(${CMAKE_SOURCE_DIR}/.cmake/Version/Version.h.in ${CMAKE_CURRENT_BINARY_DIR}/Applications/Version.h)
+    configure_file(${CMAKE_SOURCE_DIR}/.cmake/Version.h.in ${CMAKE_CURRENT_BINARY_DIR}/Applications/Version.h)
     
     include_directories(${CMAKE_CURRENT_BINARY_DIR}/Applications)
 
