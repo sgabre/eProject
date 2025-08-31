@@ -1,4 +1,4 @@
-#/TestHarness/Firmware/Applications/CMakeLists.txt
+#/Firmware/Applications/CMakeLists.txt
 
 
 
