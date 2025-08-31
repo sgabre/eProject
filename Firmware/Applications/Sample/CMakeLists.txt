@@ -1,4 +1,4 @@
-#/TestHarness/Firmware/Application/Sample/CMakeLists.txt
+#/Firmware/Application/Sample/CMakeLists.txt
 
 message(STATUS "Application Type: ${APPLICATION_TYPE}")
 if(APPLICATION_TYPE STREQUAL "EMBEDDED_APPLICATION")
